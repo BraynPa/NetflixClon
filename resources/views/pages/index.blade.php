@@ -1,10 +1,10 @@
 <?php 
 use function  Laravel\Folio\name;
+use function  Laravel\Folio\render;
 
-name('home')
+name('home');
 
-
+render(function(){
+    return redirect()->route('dashboard');
+});
 ?>
-<x-layouts.auth>
-    <h1>Home</h1>
-</x-layouts.auth>
