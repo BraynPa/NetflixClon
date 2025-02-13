@@ -10,6 +10,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="h-full overflow-x-hidden bg-gray-900 font-sans text-white antialiased">
+    {{$header ?? ''}}
     <main class="h-full">
         {{ $slot }}
     </main>

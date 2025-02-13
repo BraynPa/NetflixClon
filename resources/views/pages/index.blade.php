@@ -5,6 +5,6 @@ use function  Laravel\Folio\render;
 name('home');
 
 render(function(){
-    return redirect()->route('dashboard');
+    return redirect()->route('profiles');
 });
 ?>
